@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Aninha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-label="Uma carta para Aninha">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="player" aria-label="Reprodutor de música">
+        <button class="play" id="play" aria-label="Reproduzir música"><svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+        <span class="track-title">Clique aqui antes de ler</span>
+        <input id="seek" class="seek" type="range" min="0" max="100" value="0" aria-label="Progresso da música">
+        <span id="time" class="time">0:00 / 3:28</span>
+        <button class="sound" id="mute" aria-label="Silenciar música"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button>
+      </div>
+      <div class="message">
+        <h1>Há tanto que gostaria de dizer</h1>
+        <p>Mas, por vezes, as palavras se perdem<br>quando encontro seus olhos.</p>
+      </div>
+      <audio id="audio" preload="metadata" src="assets/me-encontra.mp3"></audio>
+    </section>
+    <section class="section-two" aria-labelledby="section-two-title">
+      <div class="section-two-content">
+        <h2 id="section-two-title">Você carrega o sol no olhar.</h2>
+        <p>E quando sorri, é impossível não querer sorrir também. Há uma beleza em você que vai muito além do que meus olhos conseguem enxergar.</p>
+      </div>
+    </section>
+    <section class="section-three" aria-labelledby="section-three-title">
+      <div class="section-three-sticky">
+        <div class="section-three-heading">
+          <h2 id="section-three-title">O que mais me encanta</h2>
+          <p>não é apenas sua beleza. É perceber a graça de Deus em sua vida, seu jeito de ser e como, mesmo sem perceber, você se tornou alguém tão especial para mim.</p>
+        </div>
+        <div class="section-three-video" aria-label="Carta para Aninha entre flores">
+          <video id="letter-video" muted playsinline preload="auto" webkit-playsinline aria-hidden="true">
+            <source src="assets/76851.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <section class="section-four" aria-label="Formulário para Aninha"><div class="section-four-paper"><div class="section-four-form"><iframe title="Formulário para Aninha" src="https://docs.google.com/forms/d/e/1FAIpQLSdj4WYRpNrz445umzoegUj2TylHYQI2mGCXp0SoYefIr1VgTA/viewform?embedded=true" loading="lazy">Carregando formulário…</iframe></div></div></section>
+  </main>
+</body>
+</html>
